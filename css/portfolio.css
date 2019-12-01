@@ -1,3 +1,11 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p, small {
+  font-family: 'Open Sans', sans-serif;
+}
+
 section {
   height: 100vh;
   width: 100vw;
@@ -59,8 +67,6 @@ hr {
   margin: 30px 0;
 }
 
-
-
 /* About */
 
 #about {
@@ -72,14 +78,28 @@ hr {
   width: 100%;
 }
 
+/* Projects */
 #projects {
-  background-color: firebrick;
+  background-color: #f1bc0f;
+  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 93%);
 }
 
+.projects-header {
+  margin: 0;
+  position: relative;
+  top: 60px;
+}
+
+/* Skills */
 #skills {
-  background-color: green;
+  background-color: #1abc9c;
+  clip-path: polygon(0 0, 100% 7%, 100% 93%, 0 100%);
+  transform: translateY(-50px);
 }
 
+/* Contact */
 #contact {
-  background-color: cornflowerblue;
+  background-color: #3498db;
+  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 93%);
+  transform: translateY(-100px);
 }
