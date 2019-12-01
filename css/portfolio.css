@@ -1,0 +1,85 @@
+section {
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+}
+
+nav {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  transition: background 250ms ease-in;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.navlink {
+  color: white;
+}
+
+.navlink-scrolled {
+  color: #1b76c2;
+}
+
+.nav-scrolled {
+  background-color: white;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14);
+  z-index: 2;
+}
+
+.parallax img {
+  width: 100vw;
+  height: auto;
+}
+
+.banner-text {
+  position: absolute;
+  top: 32.3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  width: 80%;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Muli', sans-serif;
+  font-weight: 1000;
+}
+
+hr {
+  width: 30%;
+  border-color: white;
+}
+
+.header {
+  text-align: center;
+  margin: 30px 0;
+}
+
+
+
+/* About */
+
+#about {
+  height: 100%;
+}
+
+.portrait {
+  max-width: 300px;
+  width: 100%;
+}
+
+#projects {
+  background-color: firebrick;
+}
+
+#skills {
+  background-color: green;
+}
+
+#contact {
+  background-color: cornflowerblue;
+}
