@@ -4,14 +4,15 @@ $(document).ready(function(){
   $('.parallax').parallax();
 });
 
+// Navbar changes when parallax container goes off screen
 const navbar = document.querySelector('nav');
 const navlink = document.getElementsByClassName('navlink');
 const burgerIcon = document.querySelector('.sidenav-trigger');
-const toObserve = document.querySelector('.parallax-container');
-const options = {
+const parallaxContainer = document.querySelector('.parallax-container');
+const aboutOptions = {
   rootMargin: "-100px 0px 0px 0px"
 };
-const observer = new IntersectionObserver(function(entries, observer) {
+const navObserver = new IntersectionObserver(function(entries, navObserver) {
   entries.forEach(entry => {
     if (!entry.isIntersecting) {
       navbar.classList.add("nav-scrolled");
@@ -27,14 +28,35 @@ const observer = new IntersectionObserver(function(entries, observer) {
       burgerIcon.classList.remove("burger-scrolled");
     }
   });
-}, options);
+}, aboutOptions);
 
-observer.observe(toObserve);
+navObserver.observe(parallaxContainer);
 
+// Fade banner text on scroll
 $(window).scroll(function(){
   $('.banner-text').css('opacity', 1 - $(window).scrollTop() / 200);
 });
 
+// Animate "Projects" header when projects container goes on screen
+const projectsHeader = document.querySelector('.projects-header');
+const projectsContainer = document.querySelector('.projects-container');
+const projectsHeaderOptions = {
+  rootMargin: "500px 0px 0px 0px"
+};
+const projectsHeaderObserver = new IntersectionObserver(function(entries, projectsHeaderObserver) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      projectsHeader.classList.add("slideInRight");
+    } else {
+      projectsHeader.classList.remove("slideInRight");
+    }
+  });
+}, projectsHeaderOptions);
+
+projectsHeaderObserver.observe(projectsContainer);
+
+
+// Form replacement
 $('form').on('submit', () => {
   $('contact-container').html(`
     <h6 class="submit-success">Thanks for reaching out! I'll be in contact with you shortly.</h6>
