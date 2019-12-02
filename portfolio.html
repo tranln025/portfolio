@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Materialize CSS -->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1d2ebf8b6f.js" crossorigin="anonymous"></script>
   <!-- Main CSS -->
   <link rel="stylesheet" href="css/portfolio.css">
   <title>Linh Tran | Software Engineer</title>
@@ -22,7 +24,7 @@
         <ul id="nav-mobile tabs tabs-transparent" class="right hide-on-med-and-down">
           <li class="tab"><a class="navlink" href="#about">About</a></li>
           <li class="tab"><a class="navlink" href="#projects">Projects</a></li>
-          <li class="tab"><a class="navlink" href="#skills">Skills</a></li>
+          <!-- <li class="tab"><a class="navlink" href="#skills">Skills</a></li> -->
           <li class="tab"><a class="navlink" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -31,7 +33,7 @@
     <ul class="sidenav" id="mobile-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
+      <!-- <li><a href="#skills">Skills</a></li> -->
       <li><a href="#contact">Contact</a></li>
     </ul>
 
@@ -131,17 +133,78 @@
 
 
   <!-- Skills -->
-    <section id="skills">
+    <!-- <section id="skills">
       <h3 class="header skills-header">Skills</h3>
       <div class="skills-container container">
 
       </div>
-    </section>
+    </section> -->
 
     
   <!-- Contact -->
     <section id="contact">
+      <h3 class="header contact-header">Contact</h3>
+      <h5 class="header contact-header">Shoot me a message. Let's connect!</h5>
+      <div class="contact-container container">
+        <div class="form-container row">
+          <form class="col s12" action="https://formspree.io/xoqvwvwl" method="POST">
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+              </div>
+              <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+              </div>
+            </div>
+            <div class="row">
+                <form class="col s12">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Message</label>
+                    </div>
+                  </div>
+                  <div class="form-btn">
+                    <button class="btn red waves-effect waves-light" type="submit" name="action">Send
+                      <i class="material-icons right">send</i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+          </form>
+        </div>
+      </div>
     </section>
+
+  <!-- Footer -->
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h5 class="white-text footer-header">Links</h5>
+            <!-- <a href="#"><p class="grey-text text-lighten-4">Resume</p></a> -->
+            <div class="icons">
+              <a href="mailto:tranln025@gmail.com"><i class="fas fa-envelope fa-4x"></i></a>
+              <a href="https://github.com/tranln025"><i class="fab fa-github-square fa-4x"></i></a>
+              <a href="https://www.linkedin.com/in/linhntran/"><i class="fab fa-linkedin fa-4x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2019 Linh Tran
+        </div>
+      </div>
+    </footer>
 
 
   <!-- JQuery -->

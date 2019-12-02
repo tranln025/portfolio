@@ -35,6 +35,17 @@ $(window).scroll(function(){
   $('.banner-text').css('opacity', 1 - $(window).scrollTop() / 200);
 });
 
+$('form').on('submit', () => {
+  $('contact-container').html(`
+    <h6 class="submit-success">Thanks for reaching out! I'll be in contact with you shortly.</h6>
+  `);
+  $('.submit-success').css({
+    "position": "relative",
+    "top": "60px",
+    "color": "white",
+  })
+})
+
 
 
 
