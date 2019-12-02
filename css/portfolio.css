@@ -36,6 +36,10 @@ nav {
   z-index: 2;
 }
 
+.burger-scrolled {
+  color: #1b76c2;
+}
+
 .parallax img {
   width: 100vw;
   height: auto;
@@ -80,26 +84,74 @@ hr {
 
 /* Projects */
 #projects {
+  height: 1600px;
   background-color: #f1bc0f;
-  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 93%);
+  clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 97%);
 }
 
-.projects-header {
-  margin: 0;
+.projects-container, .projects-header {
   position: relative;
   top: 60px;
+  color: white;
+}
+
+.projects-container {
+  text-align: center;
+}
+
+.project {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.project img {
+  display: block;
+  width: 500px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(85, 85, 85, 0.753);
+  overflow: scroll;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  color: white;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.project:hover .overlay {
+  height: 100%;
+}
+
+.project-btn {
+  text-align: center;
+  margin-top: 30px;
 }
 
 /* Skills */
 #skills {
   background-color: #1abc9c;
   clip-path: polygon(0 0, 100% 7%, 100% 93%, 0 100%);
-  transform: translateY(-50px);
+  transform: translateY(-100px);
+}
+
+.skills-container, .skills-header {
+  position: relative;
+  top: 60px;
+  color: white;
 }
 
 /* Contact */
 #contact {
   background-color: #3498db;
-  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 93%);
-  transform: translateY(-100px);
+  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+  transform: translateY(-150px);
 }
