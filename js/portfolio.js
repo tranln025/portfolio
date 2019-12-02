@@ -47,8 +47,6 @@ const projectsHeaderObserver = new IntersectionObserver(function(entries, projec
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       projectsHeader.classList.add("slideInRight");
-    } else {
-      projectsHeader.classList.remove("slideInRight");
     }
   });
 }, projectsHeaderOptions);
