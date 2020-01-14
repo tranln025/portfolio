@@ -1,11 +1,7 @@
 # Linh's Portfolio
 
 ## Link
-<<<<<<< HEAD
-https://pages.git.generalassemb.ly/ltran/portfolio/
-=======
 https://tranln025.github.io/portfolio/
->>>>>>> 3923b1dde9910f2bfb9a78e174087cc01b9767dc
 
 ## Technologies Used
 For my portfolio, I used HTML, CSS, JavaScript, and jQuery, with some elements from Materialize.CSS and an animation from animate.css. 
