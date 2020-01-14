@@ -65,12 +65,3 @@ $('form').on('submit', () => {
     "color": "white",
   })
 })
-
-
-
-
-
-
-
-// TODO 
-// Tabs on nav links

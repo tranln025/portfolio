@@ -85,10 +85,10 @@ hr {
 
 /* Projects */
 #projects {
-  height: 1800px;
+  height: 2600px;
   background-color: #f1bc0f;
   clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 97%);
-  margin: -50px 0 0 0;
+  margin: -20px 0 0 0;
 }
 
 .projects-container, .projects-header {
@@ -103,14 +103,14 @@ hr {
 
 .project {
   position: relative;
-  max-width: 500px;
+  max-width: 600px;
   margin: 0 auto;
   margin-bottom: 40px;
 }
 
 .project img {
   display: block;
-  width: 500px;
+  width: 600px;
   height: auto;
 }
 
@@ -155,8 +155,8 @@ hr {
 #contact {
   background-color: #1abc9c;
   clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 100%);
-  margin: -85px 0 0 0;
-  height: 85vh;
+  margin: -110px 0 0 0;
+  height: 600px;
 }
 
 .contact-container, .contact-header {
@@ -212,4 +212,16 @@ input:not([type]):focus:not([readonly])+label, input[type=text]:not(.browser-def
 
 .footer-copyright {
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .project img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  #projects {
+    height: 2100px;
+  }
 }
